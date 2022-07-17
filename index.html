@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ni no Kuni Cross Worlds - Im Shop Generator</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="w3-row row">
+        <div class="w3-col s12 m12 l12">
+            <div class="w3-show-inline-block w3-block section">
+                <div class="w3-label w3-center">~ ~ ~ Purrfections und Noggels - Ni No Kuni Cross Worlds Barker ~ ~ ~</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row row">
+        <!-- LP - Schub -->
+        <div class="w3-col s12 m12 l4">
+            <div class="w3-show-inline-block w3-block section">
+                <div class="w3-label w3-center">LP - Schub</div>
+                <div class="w3-bar w3-center">
+                    <button class="w3-btn" onclick="switch_tier_1(this, 0);">
+                        <div class="tier-1 skill-image">
+                            <img src="img/book-passive.png">
+                        </div>
+                    </button>
+                    <button class="w3-btn" onclick="switch_tier_2(this, 0);">
+                        <div class="tier-2 skill-image">
+                            <img src="img/book-passive.png">
+                        </div>
+                    </button>
+                    <button class="w3-btn" onclick="switch_tier_3(this, 0);">
+                        <div class="tier-3 skill-image">
+                            <img src="img/book-passive.png">
+                        </div>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Angriffsschub -->
+        <div class="w3-col s12 m12 l4">
+            <div class="w3-show-inline-block w3-block section">
+                <div class="w3-label w3-center">Angriffsschub</div>
+                <div class="w3-bar w3-center">
+                    <button class="w3-btn" onclick="switch_tier_1(this, 1);">
+                        <div class="tier-1 skill-image">
+                            <img src="img/book-passive.png">
+                        </div>
+                    </button>
+                    <button class="w3-btn" onclick="switch_tier_2(this, 1);">
+                        <div class="tier-2 skill-image">
+                            <img src="img/book-passive.png">
+                        </div>
+                    </button>
+                    <button class="w3-btn" onclick="switch_tier_3(this, 1);">
+                        <div class="tier-3 skill-image">
+                            <img src="img/book-passive.png">
+                        </div>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Verteidigungsschub -->
+        <div class="w3-col s12 m12 l4">
+            <div class="w3-show-inline-block w3-block section">
+                <div class="w3-label w3-center">Verteidigungsschub</div>
+                <div class="w3-bar w3-center">
+                    <button class="w3-btn" onclick="switch_tier_1(this, 2);">
+                        <div class="tier-1 skill-image">
+                            <img src="img/book-passive.png">
+                        </div>
+                    </button>
+                    <button class="w3-btn" onclick="switch_tier_2(this, 2);">
+                        <div class="tier-2 skill-image">
+                            <img src="img/book-passive.png">
+                        </div>
+                    </button>
+                    <button class="w3-btn" onclick="switch_tier_3(this, 2);">
+                        <div class="tier-3 skill-image">
+                            <img src="img/book-passive.png">
+                        </div>
+                    </button>
+                </div>
+            </div>
+        </div> 
+    </div>
+
+    <div class="w3-row row">
+        <!-- LP - Schub -->
+        <div class="w3-col s12 m12 l4">
+            <div class="w3-show-inline-block w3-block section">
+                <div class="w3-label w3-center">Feuerrakete</div>
+                <div class="w3-bar w3-center">
+                    <button class="w3-btn" onclick="switch_tier_1(this, 3);">
+                        <div class="tier-1 skill-image">
+                            <img src="img/book-fire.png">
+                        </div>
+                    </button>
+                    <button class="w3-btn" onclick="switch_tier_2(this, 3);">
+                        <div class="tier-2 skill-image">
+                            <img src="img/book-fire.png">
+                        </div>
+                    </button>
+                    <button class="w3-btn" onclick="switch_tier_3(this, 3);">
+                        <div class="tier-3 skill-image">
+                            <img src="img/book-fire.png">
+                        </div>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Angriffsschub -->
+        <div class="w3-col s12 m12 l4">
+            <div class="w3-show-inline-block w3-block section">
+                <div class="w3-label w3-center">Froststurm</div>
+                <div class="w3-bar w3-center">
+                    <button class="w3-btn" onclick="switch_tier_1(this, 4);">
+                        <div class="tier-1 skill-image">
+                            <img src="img/book-water.png">
+                        </div>
+                    </button>
+                    <button class="w3-btn" onclick="switch_tier_2(this, 4);">
+                        <div class="tier-2 skill-image">
+                            <img src="img/book-water.png">
+                        </div>
+                    </button>
+                    <button class="w3-btn" onclick="switch_tier_3(this, 4);">
+                        <div class="tier-3 skill-image">
+                            <img src="img/book-water.png">
+                        </div>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Verteidigungsschub -->
+        <div class="w3-col s12 m12 l4">
+            <div class="w3-show-inline-block w3-block section">
+                <div class="w3-label w3-center">Greifdornen</div>
+                <div class="w3-bar w3-center">
+                    <button class="w3-btn" onclick="switch_tier_1(this, 5);">
+                        <div class="tier-1 skill-image">
+                            <img src="img/book-earth.png">
+                        </div>
+                    </button>
+                    <button class="w3-btn" onclick="switch_tier_2(this, 5);">
+                        <div class="tier-2 skill-image">
+                            <img src="img/book-earth.png">
+                        </div>
+                    </button>
+                    <button class="w3-btn" onclick="switch_tier_3(this, 5);">
+                        <div class="tier-3 skill-image">
+                            <img src="img/book-earth.png">
+                        </div>
+                    </button>
+                </div>
+            </div>
+        </div> 
+    </div>
+
+    <div class="w3-row row">
+        <!-- LP - Schub -->
+        <div class="w3-col s12 m12 l4">
+            <div class="w3-show-inline-block w3-block section">
+                <div class="w3-label w3-center">Meteorschlag</div>
+                <div class="w3-bar w3-center">
+                    <button class="w3-btn" onclick="switch_tier_1(this, 6);">
+                        <div class="tier-1 skill-image">
+                            <img src="img/book-fire.png">
+                        </div>
+                    </button>
+                    <button class="w3-btn" onclick="switch_tier_2(this, 6);">
+                        <div class="tier-2 skill-image">
+                            <img src="img/book-fire.png">
+                        </div>
+                    </button>
+                    <button class="w3-btn" onclick="switch_tier_3(this, 6);">
+                        <div class="tier-3 skill-image">
+                            <img src="img/book-fire.png">
+                        </div>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Angriffsschub -->
+        <div class="w3-col s12 m12 l4">
+            <div class="w3-show-inline-block w3-block section">
+                <div class="w3-label w3-center">Wasserbombe</div>
+                <div class="w3-bar w3-center">
+                    <button class="w3-btn" onclick="switch_tier_1(this, 7);">
+                        <div class="tier-1 skill-image">
+                            <img src="img/book-water.png">
+                        </div>
+                    </button>
+                    <button class="w3-btn" onclick="switch_tier_2(this, 7);">
+                        <div class="tier-2 skill-image">
+                            <img src="img/book-water.png">
+                        </div>
+                    </button>
+                    <button class="w3-btn" onclick="switch_tier_3(this, 7);">
+                        <div class="tier-3 skill-image">
+                            <img src="img/book-water.png">
+                        </div>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Verteidigungsschub -->
+        <div class="w3-col s12 m12 l4">
+            <div class="w3-show-inline-block w3-block section">
+                <div class="w3-label w3-center">Blättertanz</div>
+                <div class="w3-bar w3-center">
+                    <button class="w3-btn" onclick="switch_tier_1(this, 8);">
+                        <div class="tier-1 skill-image">
+                            <img src="img/book-earth.png">
+                        </div>
+                    </button>
+                    <button class="w3-btn" onclick="switch_tier_2(this, 8);">
+                        <div class="tier-2 skill-image">
+                            <img src="img/book-earth.png">
+                        </div>
+                    </button>
+                    <button class="w3-btn" onclick="switch_tier_3(this, 8);">
+                        <div class="tier-3 skill-image">
+                            <img src="img/book-earth.png">
+                        </div>
+                    </button>
+                </div>
+            </div>
+        </div> 
+    </div>
+
+    <div class="w3-row row">
+        <!-- LP - Schub -->
+        <div class="w3-col s12 m12 l4">
+            <div class="w3-show-inline-block w3-block section">
+                <div class="w3-label w3-center">Dunkler Ballon</div>
+                <div class="w3-bar w3-center">
+                    <button class="w3-btn" onclick="switch_tier_1(this, 9);">
+                        <div class="tier-1 skill-image">
+                            <img src="img/book-dark.png">
+                        </div>
+                    </button>
+                    <button class="w3-btn" onclick="switch_tier_2(this, 9);">
+                        <div class="tier-2 skill-image">
+                            <img src="img/book-dark.png">
+                        </div>
+                    </button>
+                    <button class="w3-btn" onclick="switch_tier_3(this, 9);">
+                        <div class="tier-3 skill-image">
+                            <img src="img/book-dark.png">
+                        </div>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Angriffsschub -->
+        <div class="w3-col s12 m12 l4">
+            <div class="w3-show-inline-block w3-block section">
+                <div class="w3-label w3-center">Zutaten</div>
+                <div class="w3-bar w3-center">
+                    <button class="w3-btn" onclick="switch_cooking(this, 0);">
+                        <div class="cooking skill-image">
+                            <img src="img/cook-eggs.png">
+                        </div>
+                    </button>
+                    <button class="w3-btn" onclick="switch_cooking(this, 1);">
+                        <div class="cooking skill-image">
+                            <img src="img/cook-fish.png">
+                        </div>
+                    </button>
+                    <button class="w3-btn" onclick="switch_cooking(this, 2);">
+                        <div class="cooking skill-image">
+                            <img src="img/cook-fruits.png">
+                        </div>
+                    </button>
+                    <button class="w3-btn" onclick="switch_cooking(this, 3);">
+                        <div class="cooking skill-image">
+                            <img src="img/cook-fungi.png">
+                        </div>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Angriffsschub -->
+        <div class="w3-col s12 m12 l4">
+            <div class="w3-show-inline-block w3-block section">
+                <div class="w3-label w3-center">Lichtkugel</div>
+                <div class="w3-bar w3-center">
+                    <button class="w3-btn" onclick="switch_tier_1(this, 10);">
+                        <div class="tier-1 skill-image">
+                            <img src="img/book-light.png">
+                        </div>
+                    </button>
+                    <button class="w3-btn" onclick="switch_tier_2(this, 10);">
+                        <div class="tier-2 skill-image">
+                            <img src="img/book-light.png">
+                        </div>
+                    </button>
+                    <button class="w3-btn" onclick="switch_tier_3(this, 10);">
+                        <div class="tier-3 skill-image">
+                            <img src="img/book-light.png">
+                        </div>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row row">
+        <!-- LP - Schub -->
+        <div class="w3-col s12 m12 l4">
+            <div class="w3-show-inline-block w3-block section">
+                <div class="w3-label w3-center">Sternregen</div>
+                <div class="w3-bar w3-center">
+                    <button class="w3-btn" onclick="switch_tier_1(this, 11);">
+                        <div class="tier-1 skill-image">
+                            <img src="img/book-dark.png">
+                        </div>
+                    </button>
+                    <button class="w3-btn" onclick="switch_tier_2(this, 11);">
+                        <div class="tier-2 skill-image">
+                            <img src="img/book-dark.png">
+                        </div>
+                    </button>
+                    <button class="w3-btn" onclick="switch_tier_3(this, 11);">
+                        <div class="tier-3 skill-image">
+                            <img src="img/book-dark.png">
+                        </div>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Angriffsschub -->
+        <div class="w3-col s12 m12 l4">
+            <div class="w3-show-inline-block w3-block section">
+                <div class="w3-label w3-center">mehr Zutaten...</div>
+                <div class="w3-bar w3-center">
+                    <button class="w3-btn" onclick="switch_cooking(this, 4);">
+                        <div class="cooking skill-image">
+                            <img src="img/cook-grain.png">
+                        </div>
+                    </button>
+                    <button class="w3-btn" onclick="switch_cooking(this, 5);">
+                        <div class="cooking skill-image">
+                            <img src="img/cook-meat.png">
+                        </div>
+                    </button>
+                    <button class="w3-btn" onclick="switch_cooking(this, 6);">
+                        <div class="cooking skill-image">
+                            <img src="img/cook-milk.png">
+                        </div>
+                    </button>
+                    <button class="w3-btn" onclick="switch_cooking(this, 7);">
+                        <div class="cooking skill-image">
+                            <img src="img/cook-spice.png">
+                        </div>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Angriffsschub -->
+        <div class="w3-col s12 m12 l4">
+            <div class="w3-show-inline-block w3-block section">
+                <div class="w3-label w3-center">Lichtsturm</div>
+                <div class="w3-bar w3-center">
+                    <button class="w3-btn" onclick="switch_tier_1(this, 12);">
+                        <div class="tier-1 skill-image">
+                            <img src="img/book-light.png">
+                        </div>
+                    </button>
+                    <button class="w3-btn" onclick="switch_tier_2(this, 12);">
+                        <div class="tier-2 skill-image">
+                            <img src="img/book-light.png">
+                        </div>
+                    </button>
+                    <button class="w3-btn" onclick="switch_tier_3(this, 12);">
+                        <div class="tier-3 skill-image">
+                            <img src="img/book-light.png">
+                        </div>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row row">
+        <div class="w3-col s12 m12 l12">
+            <div class="w3-show-inline-block w3-block section">
+                <textarea readonly="true" cols="120" rows="1" id="chat-output">Bitte 3 Bücher und eine Zutat auswählen!</textarea>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
